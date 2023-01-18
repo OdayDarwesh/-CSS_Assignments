@@ -1,0 +1,40 @@
+.Parent {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.html,
+.css,
+.javascript {
+    background-color: #eee;
+    margin: 10px;
+    padding: 10px;
+    list-style-type: none;
+    
+}
+
+
+.html ol,
+.css ol  {
+    padding-left: 20px;
+}
+
+.css li {
+    list-style-type: lower-roman;
+}
+
+ol li,
+.javascript li {
+    background-color: white;
+    margin: 5px;
+    padding: 5px;
+}
+
+.javascript ul {
+    padding-left: 0px;
+}
+
+.javascript li {
+    list-style-position:inside ;
+}

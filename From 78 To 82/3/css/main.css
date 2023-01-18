@@ -1,0 +1,13 @@
+/*=============
+        == Part 3 ===
+        =============
+        - :first-child
+        - :last-child
+        - :first-of-type
+        - :last-of-type
+        - :only-child
+*/
+
+.parent .baby:only-child {
+    color: red;
+}

@@ -1,0 +1,32 @@
+h1 {
+    width: 150px;
+    margin: 150px auto;
+    color: white;
+    text-align: center;
+    position: relative;
+    background-color: #ff5722;
+}
+
+h1::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(10deg, 10deg);
+    width: 150px;
+    height: 100px;
+    background-color: #ff5722;
+    z-index: -1;
+}
+
+h1::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) skew(-10deg, -10deg);
+    width: 150px;
+    height: 100px;
+    background-color: #ff5722;
+    z-index: -1;
+}

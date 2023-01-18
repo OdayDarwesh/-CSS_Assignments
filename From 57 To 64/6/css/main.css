@@ -1,0 +1,426 @@
+
+
+* {
+    box-sizing: border-box;
+    line-height: 150%;
+    margin: 0;
+    font-family: 'Cairo', sans-serif;
+}
+
+span {
+    color: #9e9e9e;
+    font-size: 25px;
+    font-weight: bold;
+
+}
+
+.grid {
+    background-color: #ddd;
+    display: grid;
+    grid-template-columns: 75px repeat(4, 1fr) 75px;
+    grid-template-rows: 75px repeat(4, 1fr) 75px;
+    gap: 20px 20px;
+
+}
+
+.grid .one {
+    background-color: white;
+    grid-row: 2 / 3;
+    grid-column: 2 / 4;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+
+.grid .one::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 2%;
+    bottom: 2%;
+}
+
+.one .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.one h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.one p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.grid .two {
+    background-color: white;
+    grid-row: 2 / 3;
+    grid-column: 4 / 5;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+.grid .two::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 3%;
+    bottom: 2%;
+}
+
+.two .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.two h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.two p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.grid .three {
+    background-color: black;
+    color: white;
+    grid-row: 2 / 5;
+    grid-column: 5 / 6;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+
+.grid .three::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 4%;
+    bottom: 1%;
+}
+
+.three .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.three h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.three p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.grid .four {
+    background-color: white;
+    grid-row: 3 / 5;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+
+.grid .four::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 4%;
+    bottom: 1%;
+}
+
+.four .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.four h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.four p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.grid .five {
+    background-color: black;
+    color: white;
+    grid-row: 3 / 4;
+    grid-column: 3 / 5;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+
+.grid .five::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 2%;
+    bottom: 2%;
+}
+
+
+.five .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.five h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.five p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.grid .six {
+    background-color: white;
+    grid-row: 4 / 5;
+    grid-column: 3 / 5;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+
+.grid .six::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 2%;
+    bottom: 2%;
+}
+
+.six .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.six h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.six p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.grid .seven {
+    background-color: white;
+    grid-row: 5 / 6;
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+.grid .seven::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 3%;
+    bottom: 2%;
+}
+
+.seven .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.seven h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.seven p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+
+.grid .eight {
+    background-color: black;
+    color: white;
+    grid-row: 5 / 6;
+    grid-column: 3 / 4;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+.grid .eight::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 3%;
+    bottom: 2%;
+}
+
+.eight .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.eight h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.eight p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.grid .nine {
+    background-color: white;
+    grid-row: 5 / 6;
+    grid-column: 4 / 5;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+.grid .nine::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 3%;
+    bottom: 2%;
+}
+
+.nine .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.nine h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.nine p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+.grid .ten {
+    background-color: white;
+    grid-row: 5 / 6;
+    grid-column: 5 / 6;
+    display: grid;
+    grid-template-rows: 10px repeat(3, auto) 1fr;
+    grid-template-columns: 10px auto 10px;
+    gap: 20px;
+    border-bottom: 7px solid #f44336;
+    position: relative;
+}
+.grid .ten::before {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0%;
+    border-width: 20px;
+    border-style: solid;
+    border-color: transparent rgba(128, 128, 128, 1) transparent transparent;
+    right: 3%;
+    bottom: 2%;
+}
+
+.ten .name {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+}
+
+.ten h2 {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+}
+
+.ten p {
+    font-size: 20px;
+    grid-row: 4 / 5;
+    grid-column: 2 / 3;
+}
+
+

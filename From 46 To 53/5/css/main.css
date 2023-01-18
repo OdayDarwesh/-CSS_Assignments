@@ -1,0 +1,56 @@
+.parent {
+    width: 600px;
+    height: 300px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #eee;
+    display: flex;
+    align-content: stretch;
+    flex-flow: column wrap;
+}
+
+.one {
+    display: flex;
+    align-self: flex-end;
+    width: 80px;
+    height: calc(100% / 2);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(252, 151, 0)
+}
+
+.two {
+    display: flex;
+    align-self: center;
+    width: 80px;
+    height: calc(100% / 2);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    order: 4;
+    background-color: rgb(117, 202, 83)
+}
+
+.three {
+    display: flex;
+    align-self: flex-end;
+    width: 80px;
+    height: calc(100% / 2);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    order: 2;
+    background-color: rgb(119, 55, 13);
+}
+
+.four {
+    display: flex;
+    align-self: flex-start;
+    width: 80px;
+    height: calc(100% / 2);
+    justify-content: center;
+    align-items: center;
+    color: white;
+    background-color: rgb(79, 9, 192);
+}

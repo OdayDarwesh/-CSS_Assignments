@@ -1,0 +1,8 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+div[title]:nth-last-of-type(n+4) {
+    color: red;
+}

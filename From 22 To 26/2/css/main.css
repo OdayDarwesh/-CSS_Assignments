@@ -1,0 +1,17 @@
+
+
+p{
+    text-align: center;
+    text-transform: capitalize;
+    
+}
+.one{
+    font-style: italic;
+}
+.two,
+.one{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.two,.three{
+    font-weight: bold;
+}

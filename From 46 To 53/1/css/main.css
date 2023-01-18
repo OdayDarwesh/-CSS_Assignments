@@ -1,0 +1,16 @@
+div {
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    background-color: #eee;
+    color: rgb(252, 95, 5);
+    font-size: 20px;
+    font-weight: bold;
+    font-family: sans-serif;
+    border-right: 5px solid rgb(252, 95, 5);
+    border-left: 5px solid rgb(22, 122, 216);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

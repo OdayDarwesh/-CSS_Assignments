@@ -1,0 +1,33 @@
+p {
+    counter-increment: members-counters;
+    background-color: #eee;
+    position: relative;
+    width: 350px;
+    height: 20px;
+    margin: 10px auto;
+    padding: 10px;
+    text-align: center;
+}
+
+p::before {
+    content: counter(members-counters);
+    position: absolute;
+    background-color: #f44336;
+    left: 0px;
+    bottom: 0;
+    text-align: center;
+    padding: 10px;
+    width: 30;
+    font-weight: bold;
+    color: white;
+}
+
+p::after {
+    content: "";
+    position: absolute;
+    width: 5px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background-color: #f44336;
+}

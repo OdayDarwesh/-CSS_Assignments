@@ -1,0 +1,26 @@
+/*
+    CSS Selectors
+        - *
+        - Element => [p , div , h2]
+        - Element OtherElement => div p
+        - .class-name
+        - #id-name
+        - .parent .child
+        - .class-one.class-tow
+        - .class-name div, class-name p
+        - Element.class-name
+        - .paren > .child => Direct Child
+        =============
+        == Part 2 ===
+        =============
+        - Element + Other Element => [div + p]
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.parent > div + .child {
+    color: red;
+}

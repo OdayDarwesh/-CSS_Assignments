@@ -1,0 +1,11 @@
+
+div{
+    border: 2px solid #ff5722;
+    padding: 20px;
+    text-align: center;
+}
+p{
+    border: inherit;
+    padding: inherit;
+    background-color: rgb(233, 228, 221);
+}

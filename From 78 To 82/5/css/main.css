@@ -1,0 +1,9 @@
+
+
+
+
+
+
+div:not(.no-need)>p+div[title="Elzero"]:not(.no-need):last-child {
+    color: red;
+}
